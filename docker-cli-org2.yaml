@@ -16,8 +16,8 @@ volumes:
 
 networks:
   pankaj:
-    external:
-      name: $SWARM_NETWORK
+    driver: overlay
+    attachable: true
 
 services:
   cli:
