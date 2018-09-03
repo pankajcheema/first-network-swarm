@@ -140,10 +140,10 @@ services:
                     - node.hostname == $ORG2_HOSTNAME
 
     ports:
-            - published: 9051
+            - published: 8051
               target: 7051
               mode: host
-            - published: 9053
+            - published: 8053
               target: 7053
               mode: host
     networks:
