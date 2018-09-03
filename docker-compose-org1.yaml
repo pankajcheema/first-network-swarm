@@ -52,7 +52,6 @@ services:
             placement:
                 constraints:
                     - node.hostname == $ORDERER_HOSTNAME 
-
     ports:
       - 7050:7050
     extra_hosts:
