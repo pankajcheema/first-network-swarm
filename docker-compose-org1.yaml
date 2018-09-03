@@ -22,7 +22,7 @@ networks:
 
 services:
   orderer:
-    container_name: orderer
+    
     image: hyperledger/fabric-orderer:$IMAGE_TAG
     environment:
       - ORDERER_GENERAL_LOGLEVEL=INFO
@@ -65,7 +65,7 @@ services:
           - orderer.example.com
   
   peeroOrg1:
-    container_name: peeroOrg1
+    
     image: hyperledger/fabric-peer:$IMAGE_TAG
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -115,7 +115,7 @@ services:
           - peer0.org1.example.com
 
   peer1Org1:
-    container_name: peer1Org1
+    
     image: hyperledger/fabric-peer:$IMAGE_TAG
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
