@@ -101,12 +101,8 @@ services:
                     - node.hostname == $ORG1_HOSTNAME
 
     ports:
-            - published: 7051
-              target: 7051
-              mode: host
-            - published: 7053
-              target: 7053
-              mode: host
+            - 7051:7051
+            - 7053:7053
     networks:
       pankaj:
         aliases:
@@ -152,12 +148,8 @@ services:
                     - node.hostname == $ORG1_HOSTNAME
 
     ports:
-            - published: 8051
-              target: 7051
-              mode: host
-            - published: 8053
-              target: 7053
-              mode: host
+            - 8051:7051
+            - 8053:7053
     networks:
       pankaj:
         aliases:
