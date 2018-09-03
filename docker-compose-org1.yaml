@@ -59,6 +59,8 @@ services:
       - published: 7050
         target: 7050
         mode: host
+    extra_hosts:
+      - orderer.example.com:127.0.0.1
     networks:
       pankaj:
         aliases:
