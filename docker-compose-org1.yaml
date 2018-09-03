@@ -53,7 +53,7 @@ services:
                 constraints:
                     - node.hostname == $ORDERER_HOSTNAME 
     ports:
-      - 7050:7050
+        - 7050:7050
     extra_hosts:
       - orderer.example.com:127.0.0.1
     networks:
