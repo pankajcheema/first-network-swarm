@@ -54,9 +54,7 @@ services:
                     - node.hostname == $ORDERER_HOSTNAME 
 
     ports:
-      - published: 7050
-        target: 7050
-        mode: host
+      - 7050:7050
     extra_hosts:
       - orderer.example.com:127.0.0.1
     networks:
