@@ -52,6 +52,7 @@ services:
   
   peeroOrg2:
     container_name: peeroOrg2
+    image: hyperledger/fabric-peer:$IMAGE_TAG
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       # the following setting starts chaincode containers on the same
@@ -101,6 +102,7 @@ services:
 
   peer1Org2:
     container_name: peer1Org1
+    image: hyperledger/fabric-peer:$IMAGE_TAG
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       # the following setting starts chaincode containers on the same
